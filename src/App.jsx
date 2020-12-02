@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import MainTelegramm from './Main_page_component';
+import MainTelegramm from './MainPageComponent';
 
 
 

@@ -14,21 +14,6 @@ const MainTelegramm =()=>{
 
 
 
-    const { TelegramClient } = require('messaging-api-telegram');
- 
-
-const client = new TelegramClient({
-  accessToken: '1437432634:AAEfa3yM3DmDOOh5LTMzbY0Z37jDGXMQFo4',
-});
-
-client.getWebhookInfo().catch((error) => {
-    console.log(error); // formatted error message
-    console.log(error.stack); // error stack trace
-    console.log(error.config); // axios request config
-    console.log(error.request); // HTTP request
-    console.log(error.response); // HTTP response
-  });
-
 
     const handle =(event)=>{
         setState({ ...state, [event.target.name]: event.target.value})
@@ -36,10 +21,7 @@ client.getWebhookInfo().catch((error) => {
 
     
 
-    // await client.sendMessage('TestTaskTelegrammMessagebot', 'hi', {
-    //     disableWebPagePreview: true,
-    //     disableNotification: true,
-    //   });
+  
     const push_info =()=>{
         console.log(state.data,state.time,state.adress)
         const message = 'Дата: ' + state.data +',  '+

@@ -1,0 +1,20 @@
+@import '~antd/dist/antd.css';
+
+.main_telegram {
+  margin-top: 2rem;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.position_section {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.position_section button {
+  margin-top: 2rem;
+  width: 30%;
+}

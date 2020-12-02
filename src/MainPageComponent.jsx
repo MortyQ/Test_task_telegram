@@ -5,23 +5,16 @@ import { UserOutlined } from '@ant-design/icons';
 
 
 const MainTelegramm =()=>{
-
     const [state, setState] =useState({
         data: '',
         time: '',
         adress:''
     });
 
-
-
-
     const handle =(event)=>{
         setState({ ...state, [event.target.name]: event.target.value})
     }
 
-    
-
-  
     const push_info =()=>{
         console.log(state.data,state.time,state.adress)
         const message = 'Дата: ' + state.data +',  '+
@@ -39,23 +32,15 @@ const MainTelegramm =()=>{
                         <h1>Тестовое задание для собеседования</h1>
                         <div className="position_section">
     <Input  onChange={handle} name='data' size="large" placeholder="data:" prefix={<UserOutlined />} />
-    {state.data}
     <br />
     <br />
     <Input  onChange={handle} name='time'  size="large" placeholder="time:" prefix={<UserOutlined />} />
-    {state.time}
     <br />
     <br />
     <Input  onChange={handle} name='adress'   size="large" placeholder="adress:" prefix={<UserOutlined />} />
-    {state.adress}
-
     <Button onClick={push_info}  type="primary">Button</Button>
                         </div>
-
                 </div>
-
-
-
             )
 }
 
